@@ -83,7 +83,7 @@ namespace ConsoleApp1
                 }
                 else
                 {
-                    Console.WriteLine($"Please {name}, put a valid answer!");
+                    Console.WriteLine($"Please {name}, put a valid answer! ! ");
                 }
             }
 
