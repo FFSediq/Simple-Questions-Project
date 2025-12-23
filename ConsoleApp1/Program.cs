@@ -16,34 +16,34 @@ namespace ConsoleApp1
 
             string wellnessInput = "";
 
-            while (wellnessInput != "good" && wellnessInput != "bad") 
-            { 
-                Console.Write("Enter your name: ");
-                string name = Console.ReadLine();
+            
+            while (wellnessInput != "good" && wellnessInput != "bad")
+            {
+                Console.Write($"Hi {name}, how are you doing? (Good/Bad): ");
 
-                Console.Write($"Hi {name} ,  how are you doing? : Good or bad? : "  );
-                string wellnessInput = Console.ReadLine();
-                wellnessInput.ToLower();
+                
+                wellnessInput = Console.ReadLine().ToLower();
 
-                bool wellness = (wellnessInput == "good");
-
-                if ( wellness )
+                if (wellnessInput == "good")
                 {
-                    Console.WriteLine($"Ah {name} , You are doing {wellness} at this moment! ");
+                    Console.WriteLine($"Ah {name}, glad to hear you're doing well!");
                 }
-                else if ( wellness )
+                else if (wellnessInput == "bad")
                 {
-                    Console.WriteLine($"Ah {name} , That's unfortunate!");
+                    Console.WriteLine($"Ah {name}, that's unfortunate!");
                 }
                 else
                 {
-                    Console.WriteLine($"Please {name} put a valid answer!";
+                    
+                    Console.WriteLine($"Please {name}, put a valid answer!");
                 }
-
             }
-
             
 
-            }
+        }
+
+
+
+    }
     }
 }
