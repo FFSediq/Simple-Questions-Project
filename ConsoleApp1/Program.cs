@@ -63,7 +63,7 @@ namespace ConsoleApp1
                                  (player == "PAPER" && computer == "ROCK") ||
                                  (player == "SCISSORS" && computer == "PAPER"))
                         {
-                            Console.WriteLine("You WIN! I hope that makes you feel better!");
+                            Console.WriteLine("You WIN!! I hope that makes you feel better!");
                         }
                         else
                         {
